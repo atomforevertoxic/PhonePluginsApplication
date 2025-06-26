@@ -23,7 +23,16 @@ namespace EmployeesServicePlugin
 
             var employees = args.Cast<EmployeesDTO>().ToList();
 
-
+            try
+            {
+                var apiUsers = LoadUsersFromApi().Result;
+                employees.AddRange(apiUsers);
+                logger.Info($"Loaded {apiUsers.Count} employees from API dummyjson.com");
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex, "Failed to load users from API");
+            }
 
 
             return employees.Cast<DataTransferObject>();
