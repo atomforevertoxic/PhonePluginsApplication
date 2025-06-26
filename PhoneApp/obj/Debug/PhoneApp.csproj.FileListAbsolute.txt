@@ -13,3 +13,18 @@ C:\Users\dmitr\source\repos\PhoneApp\obj\Debug\PhoneApp.csproj.CopyComplete
 C:\Users\dmitr\source\repos\PhoneApp\bin\Debug\EmployeesLoader.Plugin.dll
 C:\Users\dmitr\source\repos\PhoneApp\bin\Debug\EmployeesViewer.Plugin.dll
 C:\Users\dmitr\source\repos\PhoneApp\bin\Debug\EmployeesViewer.Plugin.pdb
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\EmployeesLoader.Plugin.dll
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\EmployeesViewer.Plugin.dll
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\EmployeesViewer.Plugin.pdb
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\PhoneApp.exe.config
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\PhoneApp.exe
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\PhoneApp.pdb
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\Newtonsoft.Json.dll
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\NLog.dll
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\Newtonsoft.Json.xml
+D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\NLog.xml
+D:\Git Projects\PhonePluginsApplication\PhoneApp\obj\Debug\PhoneApp.csproj.AssemblyReference.cache
+D:\Git Projects\PhonePluginsApplication\PhoneApp\obj\Debug\PhoneApp.csproj.CoreCompileInputs.cache
+D:\Git Projects\PhonePluginsApplication\PhoneApp\obj\Debug\PhoneApp.csproj.Up2Date
+D:\Git Projects\PhonePluginsApplication\PhoneApp\obj\Debug\PhoneApp.exe
+D:\Git Projects\PhonePluginsApplication\PhoneApp\obj\Debug\PhoneApp.pdb
