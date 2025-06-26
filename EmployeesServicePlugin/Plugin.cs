@@ -1,9 +1,11 @@
-﻿using PhoneApp.Domain.Attributes;
+﻿using Newtonsoft.Json.Linq;
+using PhoneApp.Domain.Attributes;
 using PhoneApp.Domain.DTO;
 using PhoneApp.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,11 +15,39 @@ namespace EmployeesServicePlugin
     public class Plugin : IPluggable
     {
         private static readonly NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+        private const string apiURL = "https://dummyjson.com/users";
 
         public IEnumerable<DataTransferObject> Run(IEnumerable<DataTransferObject> args)
         {
-            logger.Info(AppDomain.CurrentDomain.BaseDirectory + "___EmployeeServicePlugin");
-            return new List<DataTransferObject>(args);
+            logger.Info("EmployeesServicePlugin started");
+
+            var employees = args.Cast<EmployeesDTO>().ToList();
+
+
+
+
+            return employees.Cast<DataTransferObject>();
+        }
+
+
+
+        private async Task<List<EmployeesDTO>> LoadUsersFromApi()
+        {
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetStringAsync(apiURL);
+                var json = JObject.Parse(response);
+
+                return json["users"].Select(user =>
+                {
+                    var employee = new EmployeesDTO
+                    {
+                        Name = $"{user["firstName"]} {user["lastName"]}"
+                    };
+                    employee.AddPhone(user["phone"].ToString());
+                    return employee;
+                }).ToList();
+            }
         }
     }
 }
