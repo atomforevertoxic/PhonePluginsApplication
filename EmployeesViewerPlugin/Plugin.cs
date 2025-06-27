@@ -45,7 +45,21 @@ namespace EmployeesLoaderPlugin
             string name = Console.ReadLine();
             Console.Write("Phone: ");
             string phone = Console.ReadLine();
-            Console.WriteLine($"{name} added to employees");
+            int phoneNumber = 0;
+            if (!Int32.TryParse(phone, out phoneNumber))
+            {
+                logger.Error("Phone number contains not int characters!");
+            }
+            else
+            {
+                Console.WriteLine($"{name} added to employees");
+                employeesList.Add(new EmployeesDTO()
+                {
+                    Name = name,
+                    Phone = phone
+                });
+            }
+                            
             break;
           case "del":
             Console.Write("Index of employee to delete: ");
