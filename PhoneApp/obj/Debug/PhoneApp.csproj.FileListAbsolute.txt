@@ -14,8 +14,6 @@ C:\Users\dmitr\source\repos\PhoneApp\bin\Debug\EmployeesLoader.Plugin.dll
 C:\Users\dmitr\source\repos\PhoneApp\bin\Debug\EmployeesViewer.Plugin.dll
 C:\Users\dmitr\source\repos\PhoneApp\bin\Debug\EmployeesViewer.Plugin.pdb
 D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\EmployeesLoader.Plugin.dll
-D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\EmployeesViewer.Plugin.dll
-D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\EmployeesViewer.Plugin.pdb
 D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\PhoneApp.exe.config
 D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\PhoneApp.exe
 D:\Git Projects\PhonePluginsApplication\PhoneApp\bin\Debug\PhoneApp.pdb
