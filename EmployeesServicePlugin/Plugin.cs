@@ -51,9 +51,9 @@ namespace EmployeesServicePlugin
                 {
                     var employee = new EmployeesDTO
                     {
-                        Name = $"{user["firstName"]} {user["lastName"]}"
+                        Name = $"{user["firstName"]} {user["lastName"]}",
+                        Phone = user["phone"].ToString()
                     };
-                    employee.AddPhone(user["phone"].ToString());
                     return employee;
                 }).ToList();
             }

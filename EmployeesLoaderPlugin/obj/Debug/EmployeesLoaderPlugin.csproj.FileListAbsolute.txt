@@ -16,3 +16,20 @@ C:\Users\dmitr\source\repos\EmployeesLoaderPlugin\obj\Debug\EmployeesLoaderPlugi
 C:\Users\dmitr\source\repos\EmployeesLoaderPlugin\obj\Debug\EmployeesLoaderPlugin.pdb
 C:\Users\dmitr\source\repos\EmployeesLoaderPlugin\bin\Debug\EmployeesLoader.Plugin.dll
 C:\Users\dmitr\source\repos\EmployeesLoaderPlugin\bin\Debug\EmployeesViewer.Plugin.dll
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\EmployeesLoader.Plugin.dll
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\EmployeesLoaderPlugin.dll
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\EmployeesLoaderPlugin.pdb
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\Newtonsoft.Json.dll
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\NLog.dll
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\PhoneApp.exe
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\PhoneApp.pdb
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\PhoneApp.exe.config
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\Newtonsoft.Json.xml
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\bin\Debug\NLog.xml
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\obj\Debug\EmployeesLoaderPlugin.csproj.AssemblyReference.cache
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\obj\Debug\EmployeesLoaderPlugin.Properties.Resources.resources
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\obj\Debug\EmployeesLoaderPlugin.csproj.GenerateResource.cache
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\obj\Debug\EmployeesLoaderPlugin.csproj.CoreCompileInputs.cache
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\obj\Debug\Employee.6AD90AE6.Up2Date
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\obj\Debug\EmployeesLoaderPlugin.dll
+D:\Git Projects\PhonePluginsApplication\EmployeesLoaderPlugin\obj\Debug\EmployeesLoaderPlugin.pdb
