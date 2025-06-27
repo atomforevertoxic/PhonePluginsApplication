@@ -23,9 +23,9 @@ namespace EmployeesLoaderPlugin
 
       var employeesList = args.Cast<EmployeesDTO>().ToList();
 
-      string command = "";
-
-      while(!command.ToLower().Contains("quit"))
+      string command = " ";
+      
+      while (!command.Equals("q") && !command.Equals("quit"))
       {
         Console.Write("> ");
         command = Console.ReadLine();
@@ -76,7 +76,7 @@ namespace EmployeesLoaderPlugin
             }
             break;
         }
-
+        command = command.ToLower().Trim(' ');
         Console.WriteLine("");
       }
 
