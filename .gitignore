@@ -1,43 +1,4 @@
-## Игнорирование стандартных директорий и файлов .NET ##
-
-# Папки сборки
-[Bb]in/
-[Oo]bj/
-
-# Файлы пользователя Visual Studio
-*.user
-*.userosscache
-*.sln.docstates
-
 # Файлы кэша Visual Studio
 .vs/
-.vscode/
-*.suo
-*.cache
-*.ilk
-*.pdb
-*.ncb
-*.opensdf
-*.sdf
 
-# Файлы результатов сборки
-*.log
-[Dd]ebug/
-[Rr]elease/
-x64/
-x86/
-bld/
-[Bb]uild/
-[Bb]uildOutput/
-
-# Файлы пакетов NuGet
-*.nupkg
-[Nn]u[Pp]ackages/
-packages/
-_ReSharper.Caches/
-
-# Файлы резервных копий
-*.bak
-*.tmp
-*.~*
 
