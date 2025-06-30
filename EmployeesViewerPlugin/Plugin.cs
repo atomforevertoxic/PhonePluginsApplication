@@ -15,6 +15,7 @@ namespace EmployeesLoaderPlugin
   public class Plugin : IPluggable
   {
     private static readonly NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+    private static EmployeesServicePlugin.Plugin _service;
     public IEnumerable<DataTransferObject> Run(IEnumerable<DataTransferObject> args)
     {
       logger.Info("Starting Viewer");
@@ -22,6 +23,8 @@ namespace EmployeesLoaderPlugin
       logger.Info("Available commands: list, add, del");
 
       var employeesList = args.Cast<EmployeesDTO>().ToList();
+
+      _service = new EmployeesServicePlugin.Plugin(employeesList);
 
       string command = " ";
       
@@ -33,47 +36,24 @@ namespace EmployeesLoaderPlugin
         switch(command)
         {
           case "list":
-            int index = 0;
-            foreach(var employee in employeesList)
-            {
-              Console.WriteLine($"{index} Name: {employee.Name} | Phone: {employee.Phone}");
-              ++index;
-            }
+            _service.ShowEmployeesList();
             break;
+
           case "add":
             Console.Write("Name: ");
             string name = Console.ReadLine();
             Console.Write("Phone: ");
             string phone = Console.ReadLine();
-            int phoneNumber = 0;
-            if (!Int32.TryParse(phone, out phoneNumber))
-            {
-                logger.Error("Phone number contains not int characters!");
-            }
-            else
-            {
-                Console.WriteLine($"{name} added to employees");
-                employeesList.Add(new EmployeesDTO()
-                {
-                    Name = name,
-                    Phone = phone
-                });
-            }
-                            
+            
+            _service.AddEmployeeToList(name, phone);
+                        
             break;
           case "del":
             Console.Write("Index of employee to delete: ");
-            int indexToDelete;
-            if(!Int32.TryParse(Console.ReadLine(), out indexToDelete))
-            {
-              logger.Error("Not an index or not an int value!");
-            } else {
-              if(indexToDelete >= 0 && indexToDelete < employeesList.Count())
-              {
-                logger.Info("Deleting " +  employeesList[indexToDelete].Name);
-                employeesList.RemoveAt(indexToDelete);
-              }
-            }
+            string index = Console.ReadLine();
+
+            _service.DeleteEmployeeFromList(index);
+
             break;
         }
         command = command.ToLower().Trim(' ');

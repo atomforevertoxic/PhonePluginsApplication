@@ -55,6 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmployeesServicePlugin\EmployeesServicePlugin.csproj">
+      <Project>{89c92815-1724-4674-9001-a7c7f41814d2}</Project>
+      <Name>EmployeesServicePlugin</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PhoneApp\PhoneApp.csproj">
       <Project>{e752971f-d21b-48c3-bedc-d87694ed4cbf}</Project>
       <Name>PhoneApp</Name>
